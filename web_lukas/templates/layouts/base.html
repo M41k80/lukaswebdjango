@@ -1,0 +1,27 @@
+{ {% load static %}}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=.6">
+        <link rel="stylesheet" href="{% static "Style.css" %}">
+        {% block styles %}{% endblock  %}
+        <title> {% block title %}{% endblock  %} </title>
+    </head>
+    <body>
+        {% include "layouts/partials/menu.html" %}
+        <main>
+            {% block content %} {% endblock %}
+        </main>
+        {% include "layouts/partials/footer.html" %}
+
+        {% block scripts %} {% endblock %}
+
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>

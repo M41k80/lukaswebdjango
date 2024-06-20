@@ -1,0 +1,84 @@
+{% extends "./layouts/base.html" %}
+
+{% block title%} Portafolio {% endblock %}
+{ {% load static %}}
+
+{% block content %}
+    <div class="contenido">
+        <br>
+        <br>
+        <h1 class="portafolio">Mi Portafolio Fotografico</h1>
+        <br>
+        <br>
+        <div class="fila">
+            <div class="columna">
+                <img class="imagenes" src="{% static '/images/lukasojos.JPG' %}" alt="My image">
+              
+                <p class="texto">
+                    Ojitos Lindos
+                </p>
+            </div>
+            <div class="columna">
+                <img class="imagenes" src="{% static '/images/lukasotono.JPG' %}" alt="My image">
+                <p class="texto">
+                    Curioso
+                </p>
+            </div>
+            <div class="columna">
+                <img class="imagenes" src="{% static '/images/lukas1.JPG' %}" alt="My image">
+                <p class="texto">
+                    Lluvia
+            </div>
+
+        </div>
+        <div class="fila">
+            <div class="columna">
+                <img class="imagenes" src="{% static '/images/lukas2.JPG' %}" alt="My image">
+                <p class="texto">
+                    Chismoso
+                </p>
+            </div>
+            <div class="columna">
+                <img class="imagenes" src="{% static '/images/lukas3.JPG' %}" alt="My image">
+                <p class="texto">
+                    Contento
+                </p>
+            </div>
+            <div class="columna">
+                <img class="imagenes" src="{% static '/images/lukasatardecer.jpg' %}" alt="My image">
+                <p class="texto">
+                    Atardecer
+                </p>
+            </div>
+
+        </div>
+        <div class="fila">
+            <div class="columna">
+                <img class="imagenes" src="{% static '/images/lukasatardecer2.jpg' %}" alt="My image">
+                <p class="texto">
+                    Galan
+                </p>
+            </div>
+            <div class="columna">
+                <img class="imagenes" src="{% static '/images/lukas4.JPG' %}" alt="My image">
+                <p class="texto">
+                    Nieve
+                </p>
+            </div>
+            <div class="columna">
+                <img class="imagenes" src="{% static '/images/lukas5.JPG' %}" alt="My image">
+                <p class="texto">
+                    Sonriendo
+                </p>
+            </div>
+
+        </div>
+
+
+        
+
+    </div>
+
+   
+
+{% endblock %}
